@@ -1,0 +1,59 @@
+body {
+    background-color: #fff;
+    color: #717578;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    overflow-x: hidden!important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: "Helvetica Neue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.info {
+	padding-left: 110px;
+}
+
+#logo-link {
+	padding-left: 124px;
+}
+
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn-primary a {
+	color: #fff;
+}
+
+.btn-primary {
+	background-color: #000 !important;
+	border-color: #000 !important;
+}
+
+.nav-link a {
+    color: #000;
+}
+
+.nav-link a {
+    color: #000;
+}
+
+.navbar-nav ul li {
+    display: inline;
+    padding-right: 40px!important;
+}
+
+
+header .row {
+	padding: 40px 0;
+}
