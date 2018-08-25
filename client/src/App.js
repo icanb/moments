@@ -24,6 +24,7 @@ import {
 import Books from "./pages/books.js";
 import MyItems from "./pages/myitems.js";
 import Upload from "./pages/upload.js";
+import NewMoment from "./pages/new.js";
 
 import axios from "axios";
 
@@ -35,60 +36,9 @@ class App extends Component {
       <div>
         <HashRouter>
           <div className="App">
-            <div>
-              <Navbar inverse collapseOnSelect id="homenav">
-                <Navbar.Header>
-                  <Navbar.Brand>
-                    <img src={"static/Reshwap Backup Logo 6.svg"} />
-                  </Navbar.Brand>
-                  <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                  <Nav className="nav-left">
-                    <NavItem eventKey={1} href="/#/books">
-                      <Link to="/books" className="navlink">
-                        Books
-                      </Link>
-                    </NavItem>
-                    <NavItem eventKey={2}>
-                      <Link to="/furniture" className="navlink">
-                        Furniture
-                      </Link>
-                    </NavItem>
-                    <NavItem eventKey={2}>
-                      <Link to="/electronics" className="navlink">
-                        Electronics
-                      </Link>
-                    </NavItem>
-                    <NavItem eventKey={2}>
-                      <Link to="/other" className="navlink">
-                        Other
-                      </Link>
-                    </NavItem>
-                    <NavItem eventKey={2}>
-                      <Link to="/upload" className="navlink">
-                        <b>Upload</b>
-                      </Link>
-                    </NavItem>
-                    <NavItem eventKey={2}>
-                      <Link to="/myitems" className="navlink">
-                        <b>My Items</b>
-                      </Link>
-                    </NavItem>
-                  </Nav>
-                  <Nav>
-                    <NavItem eventKey={1}>
-                      <Link to="/logout" className="navlink logout">
-                        Log out
-                      </Link>
-                    </NavItem>
-                  </Nav>
-                </Navbar.Collapse>
-              </Navbar>
-            </div>
-            <Route exact path="/" render={() => <Redirect to="/books" />} />
+            <Route exact path="/" render={() => <Redirect to="/new" />} />
             <Route path="/myitems" component={MyItems} />
-            <Route path="/books" component={Books} />
+            <Route path="/new" component={NewMoment} />
             <Route
               path="/furniture"
               component={() => <Display category="Furniture" />}

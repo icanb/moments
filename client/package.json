@@ -8,6 +8,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "filestack-js": "^1.0.2",
+    "mapbox-gl": "^0.48.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",

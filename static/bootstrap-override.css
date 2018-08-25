@@ -57,3 +57,11 @@ h1 {
 header .row {
 	padding: 40px 0;
 }
+
+.min-comp-height {
+	min-height: 640px;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
